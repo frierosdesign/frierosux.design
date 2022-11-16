@@ -42,6 +42,10 @@ header nav {
     color: black;
 }
 
+.navbar-link:hover {
+    color: yellow;
+}
+
 nav >a:first-child {
     margin-right: 20px;
 }
@@ -67,6 +71,22 @@ main a {
     height: 100%;
     margin-bottom: 20px;
 }
+
+.underline::after {
+    content: '';
+    background-color: yellow;
+    height: 10px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -8%;
+    z-index: -1;
+  }
+  .underline {
+    position: relative;
+  }
+  
 
 main .card-link-right {
     text-decoration: none;
